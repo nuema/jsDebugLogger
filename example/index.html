@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsDebugLogger Example</title>
+</head>
+<body>
+    <h1> TESTING JS DEBUG LOGGER</h1>
+    <h3> Watch the console!</h3>
+
+    <script type="text/javascript" src="../js/jsDebugLogger.js"></script>
+
+    <script type="text/javascript">
+        jsDebugLogger.setUp( {
+             DEFAULT_TYPE: "INFO"
+            ,ENABLED_BY_DEFAULT: true
+            ,PREFIX: "[myLog]"
+        })
+
+        // Default example call
+        jsDebugLogger.log('JsDebugLogger is on!');
+
+        //Call from a function
+        callError();
+        callWarn();
+
+        function callError() {
+            jsDebugLogger.ERROR('This is an error message');
+        }
+
+        function callWarn() {
+            jsDebugLogger.WARN('This is a Warn message');
+        }
+
+        function callInfo() {
+            jsDebugLogger.INFO('This is an Info message');
+        }
+    </script>
+
+</body>
+</html>
