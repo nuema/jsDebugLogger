@@ -50,12 +50,12 @@ On the browser console you will see the output messages like this:
 
 Case (1)
 ```javascript
-[myLog] INFO]  JsDebugLogger is on!
+[myLog] INFO:  JsDebugLogger is on!
 
 ```
 
 Case (2)
 ```javascript
-[myLog] ERROR] callError - This is an error message
+[myLog] ERROR: callError - This is an error message
 
 ```

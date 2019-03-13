@@ -68,7 +68,7 @@ var jsDebugLogger = {
 
     ,_log: function (type, message, caller) {
         if (this.isEnabled()) {
-            var _logLine = this.settings.PREFIX + ' ' + type + "] " + (!caller? " " : caller + " - ") + message;
+            var _logLine = this.settings.PREFIX + ' ' + type + ": " + (!caller? " " : caller + " - ") + message;
             console.log (_logLine);
         }
     }
