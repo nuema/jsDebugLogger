@@ -1,7 +1,7 @@
 # js Debug Logger
 
 ## Description
-A really simple Client Side Javascript logger.
+A simple Client Side Javascript logger.
 
 It logs on js console, when the logger is enabled 
 
@@ -27,7 +27,7 @@ _It does not require setUp for default configuration_
        })  
 ``` 
 
-- Then call the jsDebugger log function instead console.log
+- Then call the jsDebugger log function instead of console.log
 ```javascript
         // Default call (1)
         jsDebugLogger.log('JsDebugLogger is on!');
